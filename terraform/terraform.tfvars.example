@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is git-ignored.
+team_name = "my-team"
+
+# Failure injection (leave at 0 until the demo / game day):
+# failure_rate     = 0.5
+# added_latency_ms = 4000

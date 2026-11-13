@@ -1,0 +1,12 @@
+# Runs the course autograder on every push. Your score report appears in the
+# Actions tab (job summary) and as a downloadable "grade-report" artifact.
+# Do not edit: the grader uses its own copy of the tests anyway.
+name: grade
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  grade:
+    uses: resilience-in-the-cloud/autograder/.github/workflows/grade.yml@main
+    with:
+      case: week-01-balance-lookup
